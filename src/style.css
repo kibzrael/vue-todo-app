@@ -59,17 +59,9 @@ input:focus {
   --dark-card-color: hsl(235, 24%, 19%);
   --dark-text-color: hsl(234, 39%, 85%);
   --dark-subtitle-color-hover: hsl(236, 33%, 92%);
-  --dark--subtitle-color: hsl(234, 11%, 52%);
+  --dark-subtitle-color: hsl(234, 11%, 52%);
   --dark-faded-color: hsl(233, 14%, 35%);
   --dark-checkbox-color: hsl(237, 14%, 26%);
-
-  --background-color: var(--light-background-color);
-  --checkbox-color: var(--light-faded-color);
-  --faded-color: var(--light-subtitle-color);
-  --subtitle-color: var(--light-subtitle-color);
-  --subtitle-color-hover: var(--light-subtitle-color);
-  --text-color: var(--light-text-color);
-  --card-color: var(--light-card-color);
 
   --light-desktop-bg: url("/bg-desktop-light.jpg");
   --light-mobile-bg: url("/bg-mobile-light.jpg");
@@ -77,10 +69,33 @@ input:focus {
   --dark-desktop-bg: url("/bg-desktop-dark.jpg");
   --dark-mobile-bg: url("/bg-mobile-dark.jpg");
 
+  font-weight: var(--regular-weight);
+}
+
+.light {
+  --background-color: var(--light-background-color);
+  --checkbox-color: var(--light-faded-color);
+  --faded-color: var(--light-subtitle-color);
+  --subtitle-color: var(--light-subtitle-color);
+  --subtitle-color-hover: var(--light-text-color);
+  --text-color: var(--light-text-color);
+  --card-color: var(--light-card-color);
+
   --desktop-bg: var(--light-desktop-bg);
   --mobile-bg: var(--light-mobile-bg);
+}
 
-  font-weight: var(--regular-weight);
+.dark {
+  --background-color: var(--dark-background-color);
+  --checkbox-color: var(--dark-checkbox-color);
+  --faded-color: var(--dark-faded-color);
+  --subtitle-color: var(--dark-subtitle-color);
+  --subtitle-color-hover: var(--dark-subtitle-color-hover);
+  --text-color: var(--dark-text-color);
+  --card-color: var(--dark-card-color);
+
+  --desktop-bg: var(--dark-desktop-bg);
+  --mobile-bg: var(--dark-mobile-bg);
 }
 
 body {
@@ -177,6 +192,10 @@ h1 {
   padding: 4rem 0 1rem;
 }
 
+.topbar img {
+  cursor: pointer;
+}
+
 .todo-input {
   margin: 1.5rem 0;
 }
@@ -256,6 +275,7 @@ h1 {
 .input {
   padding: 0.5rem 0;
   flex-grow: 1;
+  background-color: transparent;
 }
 
 .checkbox {
@@ -314,7 +334,7 @@ h1 {
 .menu p:hover,
 .detached-menu p:hover {
   cursor: pointer;
-  color: var(--text-color);
+  color: var(--subtitle-color-hover);
 }
 
 .menu-active {
