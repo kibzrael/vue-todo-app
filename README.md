@@ -65,5 +65,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/kibzrael)
-- Twitter - [@yourusername](https://www.twitter.com/kibzrael)
+- Frontend Mentor - [@kibzrael](https://www.frontendmentor.io/profile/kibzrael)
+- Twitter - [@kibzrael](https://www.twitter.com/kibzrael)
