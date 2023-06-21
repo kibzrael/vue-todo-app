@@ -44,7 +44,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [HERE](https://www.frontendmentor.io/solutions/responsive-todo-app-build-using-vue-js-eQ4cAIw_pn)
-- Live Site URL: [https://todo.raelcode.tech/](https://todo.raelcode.tech/)
+- Live Site URL: [https://todo.raelcode.com/](https://todo.raelcode.com/)
 
 ## My process
 
